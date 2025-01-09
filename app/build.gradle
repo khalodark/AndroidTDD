@@ -7,12 +7,12 @@ plugins {
 
 android {
     namespace 'com.khalodark.androidcomposetdd'
-    compileSdk 34
+    compileSdk 35
 
     defaultConfig {
         applicationId "com.khalodark.androidcomposetdd"
         minSdk 26
-        targetSdk 34
+        targetSdk 35
         versionCode 1
         versionName "1.0"
 
@@ -46,6 +46,7 @@ dependencies {
     implementation libs.androidx.navigation.compose
     // Hilt
     implementation libs.hilt.android
+    testImplementation libs.junit.jupiter
     ksp libs.hilt.android.compiler
     // Retrofit
     implementation libs.retrofit
